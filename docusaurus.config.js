@@ -8,13 +8,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'HSS Docs',
   tagline: 'Hand siteswap documentation and examples',
-  url: 'https://aditya95sriram.github.io/hss-docs',
-  baseUrl: '/',
+  url: 'https://aditya95sriram.github.io/',
+  baseUrl: '/hss-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'aditya95sriram', // Usually your GitHub org/user name.
   projectName: 'hss-docs', // Usually your repo name.
+  deploymentBranch: 'gh-pages', // optional, but better explicit
   trailingSlash: true,
 
   presets: [
@@ -92,8 +93,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Blog (fake)',
+                to: '/docs/intro',
               },
               {
                 label: 'GitHub',

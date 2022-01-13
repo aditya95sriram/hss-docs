@@ -9,7 +9,7 @@ description: My doc description
 
 # Markdown tryout
 
-Markdown text with [links](hello)
+Markdown text with [links](/docs/intro)
 
 ```txt title="manual settings"
 hss = 2523
