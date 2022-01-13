@@ -1,0 +1,89 @@
+{
+    "records": [
+        {
+            "id": "rec5ohdmhNSqSHQnq",
+            "fields": {
+                "hss": "1124",
+                "pattern": "5",
+                "tags": [
+                    "solo",
+                    "medium"
+                ],
+                "id": 6
+            },
+            "createdTime": "2022-01-05T13:14:41.000Z"
+        },
+        {
+            "id": "recMfJVOHao8O5MWh",
+            "fields": {
+                "manual_settings": "dwellmax=false;",
+                "hss": "114",
+                "pattern": "3",
+                "alternate-notations": "snake",
+                "tags": [
+                    "medium",
+                    "duo"
+                ],
+                "id": 4
+            },
+            "createdTime": "2022-01-05T13:03:16.000Z"
+        },
+        {
+            "id": "recPEmu5ksRoqEFWT",
+            "fields": {
+                "manual_settings": "bps=2.8;",
+                "hss": "13",
+                "pattern": "42",
+                "alternate-notations": "galloped 423",
+                "tags": [
+                    "solo",
+                    "hard",
+                    "galloped"
+                ],
+                "id": 5
+            },
+            "createdTime": "2022-01-05T13:13:15.000Z"
+        },
+        {
+            "id": "recUaG6vU4Ema3DCE",
+            "fields": {
+                "hss": "3",
+                "pattern": "726",
+                "tags": [
+                    "multi",
+                    "easy"
+                ],
+                "id": 2
+            },
+            "createdTime": "2022-01-05T12:21:04.000Z"
+        },
+        {
+            "id": "recZt3USt9xu50Ibt",
+            "fields": {
+                "manual_settings": "body={\n(0,-30).|(0,30).\n};\nhandspec=(1,)(,2);",
+                "hss": "123",
+                "pattern": "5",
+                "tags": [
+                    "easy",
+                    "duo"
+                ],
+                "id": 1
+            },
+            "createdTime": "2022-01-05T12:21:04.000Z"
+        },
+        {
+            "id": "recjfzLGluxD8YfaT",
+            "fields": {
+                "manual_settings": "handspec=(2,1)(4,3);",
+                "hss": "426",
+                "pattern": "7",
+                "tags": [
+                    "multi",
+                    "hard"
+                ],
+                "id": 3
+            },
+            "createdTime": "2022-01-05T12:21:04.000Z"
+        }
+    ]
+}
