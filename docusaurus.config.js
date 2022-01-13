@@ -43,7 +43,7 @@ const config = {
       navbar: {
         title: 'HSS Docs',
         logo: {
-          alt: 'HSS logo',
+          alt: 'Docusaurus logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -51,7 +51,12 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Introduction',
+          },
+          { 
+            position: 'left',
+            label: 'Examples',
+            to: '/examples/'
           },
           {
             href: 'https://github.com/aditya95sriram/hss-docs',
@@ -67,43 +72,26 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Introduction',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Other Links',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Examples',
+                to: '/examples/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog (fake)',
-                to: '/docs/intro',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/aditya95sriram/hss-docs',
+                label: 'Juggling Lab',
+                href: 'https://jugglinglab.org/',
               },
             ],
           },
         ],
-        copyright: `MIT License. Built with Docusaurus`,
+        copyright: 'MIT License. Built with Docusaurus',
       },
       prism: {
         theme: lightCodeTheme,
