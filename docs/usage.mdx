@@ -1,0 +1,61 @@
+---
+title: Usage
+description: Worked out case studies/examples demonstrating HSS
+sidebar_position: 2
+---
+
+import Admonition from '@theme/Admonition';
+
+export const Flag = ({children}) => (
+  <strong style={{backgroundColor: 'red', padding: '1px'}}>({children})</strong>
+)
+
+export const Inputs = ({children, pattern}) => (
+  <Admonition type="info" title="Pattern Input">
+    <strong>Pattern:</strong> <code>{pattern}</code>
+    <br/>
+    <strong>Manual Settings:</strong> <code>{children}</code>
+  </Admonition>
+)
+
+
+# Usage
+
+## Basic Usage
+
+[Juggling Lab][1] (JL) supports hand siteswap sequences.
+In order to simulate a pattern with OSS `42` and HSS `13`,
+enter the OSS in the pattern field and enter the 
+HSS in the "Manual Settings" field as `hss=13`.
+
+<Flag>ADD IMAGE/SCREENSHOT</Flag>
+
+See [Additional Settings](../settings) for other options.
+
+
+Now we show the siteswap sequences of some known patterns and 
+compare it with other existing notations.
+
+
+## Solo Juggler Example
+
+<Inputs pattern="42">hss=13</Inputs>
+
+<Flag>insert gif</Flag>
+
+* Common Interpretation: "Galloped" `423`
+  - no straightforward way to mimic galloped timing in simulators
+  - actual pattern looks rhythmic and not galloped
+* JL asynchronous notation: `R4 R2x L4 L2x`
+  - lengthy representation
+  - need to change default dwell beats <Flag>find proper param name</Flag> 
+    to a value less than `1`
+  - does not optimize the dwell time to enable the `4` throws to be thrown lower
+* JL synchronous notation: `(2, 2T)! (0, 2x)! (2T,2)! (2x, 0)!`
+  - Lengthy representation.
+  - Why should we need synchronous notation for an asynchronous pattern?
+  - Needs understanding of synchronous notation, throw modifiers and suppressed beats.
+
+
+
+[1]: https://jugglinglab.org

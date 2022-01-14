@@ -31,6 +31,15 @@ This is danger
 This is info
 :::
 
+:::note Note
+This is a note
+:::
+
+:::caution Caution
+This is a cautionary warning
+:::
+
+
 # Tutorial Intro
 
 Let's discover **Docusaurus in less than 5 minutes**.
