@@ -1,11 +1,11 @@
 ---
 title: Introduction
-description: Basic introduction to hand siteswap sequences
+description: Introduction to hand siteswap sequences
 sidebar_position: 1
 ---
 
 
-# HSS Intro
+# Introduction
 
 
 ## Background
