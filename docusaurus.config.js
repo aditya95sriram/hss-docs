@@ -28,6 +28,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/aditya95sriram/hss-docs/tree/main/',
+          showLastUpdateTime: true
         },
         blog: false,
         theme: {
