@@ -7,18 +7,29 @@ sidebar_position: 2
 # Usage
 
 import Admonition from '@theme/Admonition';
+import Gif from '../src/components/Gif';
 
 export const Flag = ({children}) => (
   <strong style={{backgroundColor: 'red', padding: '1px'}}>({children})</strong>
 )
 
-export const Inputs = ({children, pattern}) => (
-  <Admonition type="info" title="Pattern Input">
-    <strong>Pattern:</strong> <code>{pattern}</code>
-    <br/>
-    <strong>Manual Settings:</strong> <code>{children}</code>
-  </Admonition>
-)
+export const Inputs = ({children, pattern}) => {
+  return (
+    <div className="row">
+      <div className="col col--4">
+        <Admonition type="info" title="Pattern Input">
+          <strong>Pattern:</strong> <code>{pattern}</code>
+          <br/>
+          <strong>Manual Settings:</strong> <code>{children}</code>
+        </Admonition>
+      </div>
+      <div className="col col--8">
+        <Gif pattern={pattern}>{children}</Gif>
+      </div>
+    </div>
+  )
+}
+
 
 ## Basic Usage
 
@@ -53,8 +64,47 @@ compare it with other existing notations.
 * JL synchronous notation: `(2, 2T)! (0, 2x)! (2T,2)! (2x, 0)!`
   - lengthy representation
   - why should we need synchronous notation for an asynchronous pattern
-  - needs understanding of synchronous notation, throw modifiers and suppressed beats
+  - needs understanding of synchronous notation, throw modifiers
+    and suppressed beats
 
+
+## Asynchronous Prechac
+
+<Inputs pattern="5">hss=4</Inputs>
+
+<Flag>insert gif</Flag>
+
+* Common (Prechac) interpretation: `2.5p`
+  - Involves fractional throws and modifiers to indicate passes
+  - Need modified average theorem and permutation test to check validity 
+    and to determine the number of jugglers and objects
+* JL synchronous notation: `<(0,5xp) (5xp,0) | (0,0)! (0,5p) (5p,0)!>`
+  - Apart from synchronous notation, suppressed beats and throw modifiers,
+    knowledge of passing notation is also needed to represent
+    what is essentially an asynchronous pattern
+* The OSS/HSS approach is how Tarim envisaged asynchronous Prechac patterns
+  - Tarim suggested class of patterns which combined any oss with
+    hss `2 × numberOfJugglers`
+  - Hand assignment imagined by Tarim was same as our default hand assignment
+
+<Flag>add tarim reference</Flag>
+
+
+## Pattern discovery
+
+Combining any valid object siteswap sequence with any valid hand siteswap
+sequence yields a valid pattern. For example:
+
+<Inputs pattern="7">hss=423</Inputs>
+<Flag>insert gif</Flag>
+
+* Though all throws are 7's, the difficulty level for individual hands
+  is different
+* The hand throwing every third beat has the easiest role
+* Roles can be identified and assigned to jugglers with different skill
+  levels via the [`handspec`](../settings#handspec) feature
+
+<Flag>move handspec discussion to settings page</Flag>
 
 
 [1]: https://jugglinglab.org

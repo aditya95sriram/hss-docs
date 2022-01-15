@@ -18,14 +18,14 @@ function HomepageHeader() {
             <Link
               className="button button--secondary button--lg"
               to="/docs/intro">
-              HSS Documentation
+              Documentation
             </Link>
           </div>
           <div className={styles.buttons, clsx('col col--3')}>
             <Link
               className="button button--secondary button--lg"
               to="/examples">
-              HSS Examples
+              Examples
             </Link>
           </div>
           <div className="col col--3"></div>
