@@ -1,15 +1,19 @@
 import React, { useState, useRef } from "react";
 import Layout from '@theme/Layout';
 import ExampleList from "../components/ExampleList";
-import { records } from '/hss-examples.json';
-
-
-// single common stylesheet for all components
-import '../css/examples.css'
+import { records } from '/sample.json';
 
 
 // discard random unique id and created time attributes
 const all_examples = records.map( record => record.fields );
+
+// populate all optional fields with default values
+for (let example of all_examples) {
+    if (!("tags" in example)) example.tags = [];
+    if (!("title" in example)) example.title = "";
+    if (!("manual_settings" in example)) example.manual_settings = "";
+    if (!("alternate_notations" in example)) example.alternate_notations = "";
+}
 
 // compute set of all tags
 const all_tags = [];

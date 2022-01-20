@@ -3,10 +3,10 @@ import Example from "./Example";
 
 export default function ExampleList( { examples, addTag } ) {
   return (
-    <ul>
+    <div className="row">
       { examples.map( example =>
         <Example key={example.id} data={example} addTag={addTag}/>
       ) }
-    </ul>
+    </div>
   )
 }
