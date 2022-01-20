@@ -19,7 +19,7 @@
                 "manual_settings": "dwellmax=false;",
                 "hss": "114",
                 "pattern": "3",
-                "alternate-notations": "snake",
+                "alternate_notations": "snake",
                 "tags": [
                     "medium",
                     "duo"
@@ -34,7 +34,7 @@
                 "manual_settings": "bps=2.8;",
                 "hss": "13",
                 "pattern": "42",
-                "alternate-notations": "galloped 423",
+                "alternate_notations": "galloped 423",
                 "tags": [
                     "solo",
                     "hard",

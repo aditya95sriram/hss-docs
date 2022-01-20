@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<!DOCTYPE jml SYSTEM "file://jml.dtd">
+<jml version="1.2">
+<patternlist>
+<title>Sample HSS</title>
+
+<line display="Sample jml file for jml2json.py"/>
+<line display="____________________________________"/>
+<line display=""/>
+
+
+<line display="from hss_TwoHandedPatterns.jml"/>
+
+<line display="3;hss=114;dwellmax=false (snake)" notation="siteswap">
+pattern=3;
+hss=114;
+dwellmax=false;
+title=Snake;
+tags=solo,easy,,snake
+</line>
+
+<line display="3;hss=114" notation="siteswap">
+pattern=3;
+hss=114;
+title=oss: 3  hss: 114;
+tags=solo,medium
+</line>
+
+<line display="3;hss=13;dwellmax=false" notation="siteswap">
+pattern=3;
+hss=13;
+dwellmax=false;
+title=oss: 3  hss: 13;
+tags=solo,hard
+</line>
+
+<line display="3;hss=2;handspec=(1,)(,2)" notation="siteswap">
+pattern=3;
+body={
+(0,-30).|(0,30).
+};
+hss=2;
+handspec=(1,)(,2);
+title=oss: 3  hss: 2;
+tags=solo,easy
+</line>
+
+<line display="42;hss=13 (galloped 423)" notation="siteswap">
+pattern=42;
+bps=2.8;
+hss=13;
+title=Galloped 423;
+tags=solo,medium,galloped;
+</line>
+
+<line display="42;hss=13;handspec=(1,)(,2)" notation="siteswap">
+pattern=42;
+bps=2.8;
+body={
+(0,-30).|(0,30).
+};
+hss=13;
+handspec=(1,)(,2);
+title=oss: 42  hss: 13
+</line>
+
+
+<line display="from hss_PrechacWeaves.jml"/>
+
+<line display="3773;hss=2266;handspec=(1,2)(3,4)" notation="siteswap">
+pattern=3773;
+bps=3;
+body={
+(0,-42.5,42.5).(0,0,60).(0,42.5,42.5).(0,60,0).
+    (0,42.5,-42.5).(0,0,-60).(0,-42.5,-42.5).(0,-60,0).|
+(0,42.5,-42.5).(0,0,-60).(0,-42.5,-42.5).(0,-60,0).
+    (0,-42.5,42.5).(0,0,60).(0,42.5,42.5).(0,60,0).
+};
+hss=2266;
+handspec=(1,2)(3,4);
+title=oss: 3773  hss: 2266;
+tags=prechac,duo,medium
+</line>
+
+<line display="003;hss=288" notation="siteswap">
+pattern=003;
+bps=3;
+body={
+(0,-90,52).(0,-49.5,59).(0,-14,38).(0,0,0).(0,14,-38).
+    (0,49.5,-59).(0,90,-52).(0,116.5,-20.5).(0,116.5,20.5).
+    (0,90,52).(0,49.5,59).(0,14,38).(0,0,0).(0,-14,-38).
+    (0,-49.5,-59).(0,-90,-52).(0,-116.5,-20.5).(0,-116.5,20.5).|
+(0,90,-52).(0,116.5,-20.5).(0,116.5,20.5).(0,90,52).
+    (0,49.5,59).(0,14,38).(0,0,0).(0,-14,-38).(0,-49.5,-59).
+    (0,-90,-52).(0,-116.5,-20.5).(0,-116.5,20.5).(0,-90,52).
+    (0,-49.5,59).(0,-14,38).(0,0,0).(0,14,-38).(0,49.5,-59).|
+(0,0,0).(0,-14,-38).(0,-49.5,-59).(0,-90,-52).(0,-116.5,-20.5).
+    (0,-116.5,20.5).(0,-90,52).(0,-49.5,59).(0,-14,38).(0,0,0).
+    (0,14,-38).(0,49.5,-59).(0,90,-52).(0,116.5,-20.5).
+    (0,116.5,20.5).(0,90,52).(0,49.5,59).(0,14,38).
+};
+hss=288;
+handspec=(1,2)(4,3)(5,6);
+title=oss: 003  hss: 288;
+tags=prechac,multi,hard
+</line>
+
+
+<line display="from hss_2JugglersSymmetric.jml"/>
+
+<line display="handspec effect: tramline passes"/>
+<line display="5;hss=22286;handspec=(2,1)(3,4)" notation="siteswap">
+pattern=5;
+hss=22286;
+handspec=(2,1)(3,4);
+title=Tramline passes;
+tags=tramline,symmetric,duo,medium
+</line>
+<line display=""/>
+
+<line display="handspec effect: crossing passes"/>
+<line display="5;hss=22286;handspec=(2,1)(4,3)" notation="siteswap">
+pattern=5;
+hss=22286;
+handspec=(2,1)(4,3);
+title=Crossing passes;
+tags=crossing,symmetric,duo,hard
+</line>
+
+
+<line display="from hss_2JugglersAsymmetric"/>
+
+<line display="Five count popcorn vs why not?"/>
+<line display="7862678682;hss=4" notation="siteswap">
+pattern=7862678682;
+hss=4;
+title=Five count popcorn vs Why not?;
+tags=duo,popcorn,easy,asymmetric
+</line>
+<line display=""/>
+
+<line display="funky bookends vs parsnip"/>
+<line display="7772677782;hss=4" notation="siteswap">
+pattern=7772677782;
+hss=4;
+title=Funky bookends vs Parsnip; tags=duo,parsnip,hard,asymmetric;
+</line>
+
+<line display=""/>
+
+</patternlist>
+</jml> 
