@@ -16,14 +16,14 @@ pattern=3;
 hss=114;
 dwellmax=false;
 title=Snake;
-tags=solo,easy,,snake
+tags=solo,,snake
 </line>
 
 <line display="3;hss=114" notation="siteswap">
 pattern=3;
 hss=114;
 title=oss: 3  hss: 114;
-tags=solo,medium
+tags=solo
 </line>
 
 <line display="3;hss=13;dwellmax=false" notation="siteswap">
@@ -31,7 +31,7 @@ pattern=3;
 hss=13;
 dwellmax=false;
 title=oss: 3  hss: 13;
-tags=solo,hard
+tags=solo
 </line>
 
 <line display="3;hss=2;handspec=(1,)(,2)" notation="siteswap">
@@ -42,7 +42,7 @@ body={
 hss=2;
 handspec=(1,)(,2);
 title=oss: 3  hss: 2;
-tags=solo,easy
+tags=solo
 </line>
 
 <line display="42;hss=13 (galloped 423)" notation="siteswap">
@@ -50,7 +50,7 @@ pattern=42;
 bps=2.8;
 hss=13;
 title=Galloped 423;
-tags=solo,medium,galloped;
+tags=solo,galloped;
 </line>
 
 <line display="42;hss=13;handspec=(1,)(,2)" notation="siteswap">
@@ -79,7 +79,7 @@ body={
 hss=2266;
 handspec=(1,2)(3,4);
 title=oss: 3773  hss: 2266;
-tags=prechac,duo,medium
+tags=prechac,duo
 </line>
 
 <line display="003;hss=288" notation="siteswap">
@@ -102,7 +102,7 @@ body={
 hss=288;
 handspec=(1,2)(4,3)(5,6);
 title=oss: 003  hss: 288;
-tags=prechac,multi,hard
+tags=prechac,multi
 </line>
 
 
@@ -114,7 +114,7 @@ pattern=5;
 hss=22286;
 handspec=(2,1)(3,4);
 title=Tramline passes;
-tags=tramline,symmetric,duo,medium
+tags=tramline,symmetric,duo
 </line>
 <line display=""/>
 
@@ -124,7 +124,7 @@ pattern=5;
 hss=22286;
 handspec=(2,1)(4,3);
 title=Crossing passes;
-tags=crossing,symmetric,duo,hard
+tags=crossing,symmetric,duo
 </line>
 
 
@@ -135,7 +135,7 @@ tags=crossing,symmetric,duo,hard
 pattern=7862678682;
 hss=4;
 title=Five count popcorn vs Why not?;
-tags=duo,popcorn,easy,asymmetric
+tags=duo,popcorn,asymmetric
 </line>
 <line display=""/>
 
@@ -143,7 +143,7 @@ tags=duo,popcorn,easy,asymmetric
 <line display="7772677782;hss=4" notation="siteswap">
 pattern=7772677782;
 hss=4;
-title=Funky bookends vs Parsnip; tags=duo,parsnip,hard,asymmetric;
+title=Funky bookends vs Parsnip; tags=duo,parsnip,asymmetric;
 </line>
 
 <line display=""/>
