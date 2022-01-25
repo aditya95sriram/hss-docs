@@ -2,7 +2,8 @@
 
 import xml.etree.ElementTree as ET
 import json
-from uuid import uuid4 as uuid
+import hashlib  # to generate compact ids
+
 
 OUTFILE = "static/sample.json"
 INDIR = "static/patterns"
@@ -17,6 +18,22 @@ def strip_all(iterable):
 
 def clean_strings(iterable):
     return [e for e in strip_all(iterable) if e]
+
+
+def get_id(example):
+    if "manual_settings" in example:
+        # to prevent mutation to outside variable
+        example = example.copy()
+
+        # remove all newlines and spaces in manual settings
+        settings = example["manual_settings"]
+        settings = settings.replace("\n", "").replace(" ", "")
+        example["manual_settings"] = settings
+
+    serialized = json.dumps(example, sort_keys=True)
+    hasher = hashlib.md5()
+    hasher.update(serialized.encode('utf-8'))
+    return hasher.hexdigest()
 
 
 def parse_jml_line(line: ET.Element):
@@ -50,7 +67,7 @@ def parse_example(entry: dict):
     else:
         title = ""
 
-    example = dict(pattern=pattern, hss=hss, id=uuid().int)
+    example = dict(pattern=pattern, hss=hss)
     if tags: example["tags"] = tags
     if title: example["title"] = title
 
@@ -59,12 +76,13 @@ def parse_example(entry: dict):
                                     for key, value in entry.items())
         example["manual_settings"] = manual_settings
 
+    example["id"] = get_id(example)
     return example
 
 
 def construct_json(examples: list):
     examples = map(parse_example, examples)
-    records = [dict(id=uuid().hex, fields=example) for example in examples]
+    records = [dict(id=example["id"], fields=example) for example in examples]
     return {"records": records}
 
 
